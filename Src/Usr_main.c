@@ -31,9 +31,9 @@ int main()
 	
 	Usr_InitHardware();
 
-	printf("\r\n==========W686 BOOTLOADER===============");
-	printf("\r\n==Software Built Time:%s %s==",__DATE__,__TIME__);
-
+	printf("\r\n=============W686 BOOTLOADER==================");
+	printf("\r\n===Software Built Time:%s %s===",__DATE__,__TIME__);
+	printf("\r\n==============================================\r\n");
 	Usr_InitValue();
 
 	if(FsUpg.UpgEnJamp==0x55)

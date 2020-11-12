@@ -4,7 +4,7 @@
 ..\output\usr_flash.o: ../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h
 ..\output\usr_flash.o: ../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g070xx.h
 ..\output\usr_flash.o: ../Drivers/CMSIS/Include/core_cm0plus.h
-..\output\usr_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\usr_flash.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\output\usr_flash.o: ../Drivers/CMSIS/Include/cmsis_version.h
 ..\output\usr_flash.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 ..\output\usr_flash.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -29,11 +29,11 @@
 ..\output\usr_flash.o: ..\Src\SEGGER.h
 ..\output\usr_flash.o: ..\Src\SEGGER_RTT.h
 ..\output\usr_flash.o: ..\Src\SEGGER_RTT_Conf.h
-..\output\usr_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\output\usr_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-..\output\usr_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-..\output\usr_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-..\output\usr_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+..\output\usr_flash.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\output\usr_flash.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+..\output\usr_flash.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\output\usr_flash.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\output\usr_flash.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 ..\output\usr_flash.o: ..\Src\Usr_flash.h
 ..\output\usr_flash.o: ..\Src\Usr_gpio.h
 ..\output\usr_flash.o: ..\Src\Usr_timer.h

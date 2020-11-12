@@ -81,7 +81,7 @@ void EXFLASH_SpiInit(void)
 }
 
 //檫除一个扇区内容（一个扇区大小为64k，即0x10000）
-void FLASH_EraseSector(uint32_t SectorAddr)
+void EXFLASH_EraseSector(uint32_t SectorAddr)
 {
     /*!< Send write enable instruction */
     FLASH_WriteEnable();
@@ -433,8 +433,8 @@ void FLASH_WaitForWriteEnd(void)
 
 void EXFLASH_Init(void)
 {
-    FLASH_EraseSector(BREAK_PIONT_ADDR_0);       //擦除flash
-    FLASH_EraseSector(BREAK_PIONT_ADDR_1);       //擦除flash
+    EXFLASH_EraseSector(BREAK_PIONT_ADDR_0);       //擦除flash
+    EXFLASH_EraseSector(BREAK_PIONT_ADDR_1);       //擦除flash
 }
 
 

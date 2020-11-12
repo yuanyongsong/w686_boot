@@ -3,7 +3,7 @@
 ..\output\stm32g0xx_ll_adc.o: ../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h
 ..\output\stm32g0xx_ll_adc.o: ../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g070xx.h
 ..\output\stm32g0xx_ll_adc.o: ../Drivers/CMSIS/Include/core_cm0plus.h
-..\output\stm32g0xx_ll_adc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\stm32g0xx_ll_adc.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\output\stm32g0xx_ll_adc.o: ../Drivers/CMSIS/Include/cmsis_version.h
 ..\output\stm32g0xx_ll_adc.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 ..\output\stm32g0xx_ll_adc.o: ../Drivers/CMSIS/Include/cmsis_armcc.h

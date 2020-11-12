@@ -38,5 +38,6 @@ void EXFLASH_SpiInit(void);
 void EXFLASH_WriteBuffer(uint8_t* pBuffer, uint32_t WriteAddr, uint16_t NumByteToWrite);
 void EXFLASH_ReadBuffer(uint8_t* pBuffer, uint32_t ReadAddr, uint16_t NumByteToRead);
 void FS_InitValue(void);
+void EXFLASH_EraseSector(uint32_t SectorAddr);
 #endif
 

@@ -16,6 +16,8 @@ void iap_write_appbin(u32 appxaddr,u8 *appbuf,u32 appsize)
 	u16 temp,k;
 	u32 fwaddr=appxaddr;//当前写入的地址
 	u8 *dfu=appbuf;
+	static u8 packnumb = 1;		//完成写入的数据包
+
 	for(t=0;t<appsize;t+=2)
 	{						    
 		temp=(u16)dfu[1]<<8;
@@ -28,7 +30,7 @@ void iap_write_appbin(u32 appxaddr,u8 *appbuf,u32 appsize)
 			
 			STMFLASH_WriteFs(fwaddr,(u64 *)iapbuf,256);	
 			memset(iapread,0,1024);
-			STMFLASH_Read(fwaddr,(u32 *)iapread,256);
+			STMFLASH_Read(fwaddr,(u32 *)iapread,512);
 			for(j=0;j<=40;j++)
 			{
 				k=memcmp(iapbuf,iapread,2048);
@@ -42,7 +44,8 @@ void iap_write_appbin(u32 appxaddr,u8 *appbuf,u32 appsize)
 				}
 				else 
 				{
-					printf("API 2k data write OK\r\n");
+					printf("API %dk data write OK\r\n",packnumb*2);
+					packnumb ++;
 					break;				
 				}
 

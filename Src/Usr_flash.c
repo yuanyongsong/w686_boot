@@ -71,11 +71,11 @@ void FS_InitValue(void)
 	memset(&FsUpg,0,sizeof(FsUpg));
   	EXFLASH_ReadBuffer((u8 *)&FsUpg,FLASH_UPG_ADDR,sizeof(FsUpg));
 	
-	printf("\r\nAppIpAdress: %s\r\n",FsUpg.AppIpAdress);
-	printf("AppFilePath:     %s\r\n",FsUpg.AppFilePath);
-	printf("UpgEnJamp:       %02X\r\n",FsUpg.UpgEnJamp);
-	printf("AppLen:          %02X\r\n",FsUpg.AppLenBuf);
-	printf("HttpError:       %s\r\n",FsUpg.HttpError);
+	printf("AppIpAdress:   %s\r\n",FsUpg.AppIpAdress);
+	printf("AppFilePath:   %s\r\n",FsUpg.AppFilePath);
+	printf("UpgEnJamp:     %02X\r\n",FsUpg.UpgEnJamp);
+	printf("AppLen:        %02X\r\n",FsUpg.AppLenBuf);
+	printf("HttpError:     %s\r\n",FsUpg.HttpError);
 
 }
 
@@ -85,6 +85,6 @@ void FS_UpdateValue(void)
 {
 	if(!Flag.NeedUpdateFs) return;
 	Flag.NeedUpdateFs=0;
-
+	EXFLASH_EraseSector(FLASH_UPG_ADDR);
 	EXFLASH_WriteBuffer((u8 *)&FsUpg,FLASH_UPG_ADDR,sizeof(FsUpg));
 }
